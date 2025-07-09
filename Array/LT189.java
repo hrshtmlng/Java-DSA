@@ -1,4 +1,3 @@
-package Array;
 
 public class LT189 {
     class Solution {
@@ -12,7 +11,7 @@ public class LT189 {
 
         }
 
-        public static void reverse(int[] nums, int start, int end) {
+        private static void reverse(int[] nums, int start, int end) {
             while (start <= end) {
                 int temp = nums[start];
                 nums[start] = nums[end];
