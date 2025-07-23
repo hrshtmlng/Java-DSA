@@ -1,0 +1,29 @@
+package SelfSolved;
+
+import java.util.Scanner;
+
+public class Mat03 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter no of rows:");
+        int rows = sc.nextInt();
+        System.out.println("Enter no of columns:");
+        int col =sc.nextInt();
+
+        int num[][] = new int[rows][col];
+        System.out.println("Enter no of elements");
+        for(int i=0;i<rows;i++){
+            for(int j =0;j<col;j++){
+                num[i][j] = sc.nextInt();
+            }
+        }
+
+        for(int j=0;j<col;j++){
+            for(int i =0;i<rows;i++){
+               System.out.print(num[i][j]+" ");
+            }
+            System.out.println();
+        }
+        sc.close();
+    }
+}
